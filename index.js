@@ -6,8 +6,7 @@
 // Require dependencies
 var xmldom    = require('xmldom'),
     xpath     = require('xpath'),
-    _         = require('lodash'),
-    profile   = {};
+    _         = require('lodash');
 
 // Saml2js
 // -------
@@ -27,7 +26,8 @@ function Saml2js (response) {
 // Parses raw SAML assertion to JS object.
 Saml2js.prototype.parse = function(saml) {
   var xml       = new Buffer(saml, 'base64').toString('ascii'),
-      doc       = new xmldom.DOMParser().parseFromString(xml);
+      doc       = new xmldom.DOMParser().parseFromString(xml),
+      profile   = {};
 
   var attributes = xpath.select('//*[local-name() = "AttributeStatement"]/*', doc);
   attributes.forEach(function(attribute){
