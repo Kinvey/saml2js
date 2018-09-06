@@ -19,8 +19,8 @@
     "url": "https://github.com/Aplo/saml2js/issues"
   },
   "dependencies": {
-    "lodash": "^4.17.11",
-    "xmldom": "^0.4.0",
+    "lodash": "^4.17.21",
+    "xmldom": "^0.6.0",
     "xpath": "^0.0.32"
   },
   "homepage": "https://github.com/Aplo/saml2js",
