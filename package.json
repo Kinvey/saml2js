@@ -19,19 +19,19 @@
     "url": "https://github.com/Aplo/saml2js/issues"
   },
   "dependencies": {
-    "lodash": "^3.10.1",
+    "lodash": "^4.17.10",
     "xmldom": "^0.1.16",
     "xpath": "0.0.5"
   },
   "homepage": "https://github.com/Aplo/saml2js",
   "devDependencies": {
     "chai": "^3.2.0",
-    "grunt": "^0.4.5",
-    "grunt-contrib-jshint": "^0.11.2",
-    "grunt-contrib-watch": "^0.6.1",
+    "grunt": "^1.0.3",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-watch": "^1.1.0",
     "jshint-stylish": "^2.0.1",
     "load-grunt-tasks": "^3.2.0",
-    "mocha": "^2.2.5",
+    "mocha": "^5.2.0",
     "time-grunt": "^1.2.1"
   },
   "scripts": {
