@@ -23,7 +23,7 @@ var express = require('express')
 
 app.post('/saml/callback/?', function(req, res, next){
   var parser = new Saml2js(res.body.SAMLResponse);
-  res.json(parser.asObject());
+  res.json(parser.toObject());
 });
 
 app.listen(3000);
@@ -48,7 +48,7 @@ After passing your SAML response as a string to the constructor you now have acc
 Returns the parsed SAML as a JavaScript object.
 
 ```
-var parsedObject = parser.asObject();
+var parsedObject = parser.toObject();
 ```
 
 Note that if your SAML has attributes have a `Name` attribute that contains a string that is mixed case and contains spaces Saml2js will automatically camel case this name when it is added as a property on the resulting object.
@@ -63,7 +63,7 @@ Given the following SAML...
 </saml2:Attribute>
 ```
 
-The resulting JavaScript object returned from `Saml2js().asObject()` will look like this:
+The resulting JavaScript object returned from `Saml2js().toObject()` will look like this:
 
 ```js
 {
