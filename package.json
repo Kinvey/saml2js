@@ -1,6 +1,6 @@
 {
   "name": "@progresskinvey/saml2js",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "Parse SAML2 attributes into a JavaScript object.",
   "main": "index.js",
   "repository": {
